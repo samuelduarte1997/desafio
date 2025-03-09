@@ -1,0 +1,17 @@
+sources:
+  - name: erp
+    description: Sistemas de venda da Adventure Works.
+    schema: raw_adventure_works
+    database: fea24_11
+    tables:
+      - name: salesorderheader
+      - name: salesorderdetail
+      - name: product
+      - name: creditcard
+      - name: customer
+      - name: person
+      - name: salesorderheadersalesreason
+      - name: salesreason
+      - name: address
+      - name: stateprovince
+      - name: countryregion
