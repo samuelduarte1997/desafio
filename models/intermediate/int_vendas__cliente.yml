@@ -1,0 +1,12 @@
+models:
+  - name: int_vendas__cliente
+    description: Modelo que mostra o nome de cada cliente
+    columns:     
+      - name: pk_cliente
+        description: chave primária com o id do cliente
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_cliente
+        description: o nome do cliente

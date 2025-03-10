@@ -7,7 +7,7 @@ with
     , renomeado as (
         select
             cast(BUSINESSENTITYID as int) as pk_pessoa
-            , FIRSTNAME || ' ' || MIDDLENAME || ' ' || LASTNAME as nome_pessoa
+            , FIRSTNAME || ' ' || LASTNAME as nome_pessoa
             -- PERSONTYPE
             -- NAMESTYLE
             -- TITLE

@@ -1,0 +1,12 @@
+models:
+  - name: int_vendas__produto
+    description: Modelo que mostra o nome do produto para cada id
+    columns:     
+      - name: pk_produto
+        description: chave primária do produto
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_produto
+        description: nome do produto

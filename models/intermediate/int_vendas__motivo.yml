@@ -1,0 +1,15 @@
+models:
+  - name: int_vendas__motivo
+    description: Modelo que mostra o motivo para cada id
+    columns:     
+      - name: pk_motivo
+        description: chave primária do motivo
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_motivo
+        description: nome do motivo
+
+      - name: tipo_motivo
+        description: indica o tipo do motivo
