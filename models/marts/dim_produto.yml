@@ -1,0 +1,16 @@
+models:
+  - name: dim_produto
+    description: Dimensão com as informações dos produtos
+    columns:     
+      - name: pk_produto
+        description: chave primária do produto
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_produto
+        description: nome do produto
+        data_tests:
+          - not_null:
+              config:
+                severity: warn
