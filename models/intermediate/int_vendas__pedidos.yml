@@ -1,0 +1,54 @@
+models:
+  - name: int_vendas__pedidos
+    description: Modelo que enriquece as informações dos pedidos com as dos itens dentro deles
+    columns:     
+      - name: pk_pedido_item
+        description: chave primária que contém cada item do pedido
+        data_tests:
+          - unique
+          - not_null
+
+      - name: fk_produto
+        description: id do produto (item)
+
+      - name: fk_cliente
+        description: id do cliente
+
+      - name: fk_endereco
+        description: id do endereco
+
+      - name: fk_cartao
+        description: id do cartao de credito
+
+      - name: fk_pedido
+        description: id do pedido
+
+      - name: fk_motivo_1
+        description: id do primeiro motivo da compra
+
+      - name: fk_motivo_2
+        description: id do segundo motivo da compra (caso tenha tido mais do que 1)
+
+      - name: fk_motivo_3
+        description: id do terceiro motivo da compra (caso tenha tido mais do que 2)
+
+      - name: fk_data_do_pedido
+        description: id da data do pedido no formato 'YYYY-MM-DD'
+
+      - name: status_pedido
+        description: id do status do pedido
+
+      - name: quantidade
+        description: o número de produtos do item em questão que foram vendidos
+
+      - name: preco_da_unidade
+        description: o preço da unidade do produto vendido
+
+      - name: desconto_da_unidade
+        description: qual o desconto de cada unidade do produto
+
+      - name: total_bruto
+        description: total bruto do item
+
+      - name: total_liquido
+        description: total liquido do item

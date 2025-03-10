@@ -1,0 +1,18 @@
+models:
+  - name: int_vendas__data
+    description: Modelo que mostra o motivo para cada id
+    columns:     
+      - name: pk_data_do_pedido
+        description: chave primária com a data do pedido no formato 'YYYY-MM-DD'
+        data_tests:
+          - unique
+          - not_null
+
+      - name: dia_do_pedido
+        description: o dia em que foi feito o pedido
+
+      - name: mes_do_pedido
+        description: o mes em que foi feito o pedido
+
+      - name: ano_do_pedido
+        description: o ano em que foi feito o pedido

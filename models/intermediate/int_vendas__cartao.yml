@@ -1,0 +1,12 @@
+models:
+  - name: int_vendas__cartao
+    description: Modelo que mostra o nome do tipo de cada cartao
+    columns:     
+      - name: pk_cartao
+        description: chave primária com o id do cartao
+        data_tests:
+          - unique
+          - not_null
+
+      - name: tipo_cartao
+        description: o tipo do cartao
