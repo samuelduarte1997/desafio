@@ -1,0 +1,16 @@
+models:
+  - name: dim_cliente
+    description: Dimensão com os nomes dos clientes
+    columns:     
+      - name: pk_cliente
+        description: chave primária com o id do cliente
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_cliente
+        description: o nome do cliente
+        data_tests:
+          - not_null:
+              config:
+                severity: warn

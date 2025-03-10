@@ -1,0 +1,24 @@
+models:
+  - name: dim_data
+    description: Dimensão contendo colunas com o dia, mês e ano para cada data
+    columns:     
+      - name: pk_data_do_pedido
+        description: chave primária com a data do pedido no formato 'YYYY-MM-DD'
+        data_tests:
+          - unique
+          - not_null
+
+      - name: dia_do_pedido
+        description: o dia em que foi feito o pedido
+        data_tests:
+          - not_null
+
+      - name: mes_do_pedido
+        description: o mes em que foi feito o pedido
+        data_tests:
+          - not_null
+
+      - name: ano_do_pedido
+        description: o ano em que foi feito o pedido
+        data_tests:
+          - not_null

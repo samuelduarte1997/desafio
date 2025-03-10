@@ -1,0 +1,40 @@
+models:
+  - name: dim_localizacao
+    description: Dimensão com as informações referentes a localização do comprador (cidade, estado, país)
+    columns:     
+      - name: pk_endereco
+        description: chave primária da localizacao
+        data_tests:
+          - unique
+          - not_null
+
+      - name: nome_endereco
+        description: nome da rua
+        data_tests:
+          - not_null:
+              config:
+                severity: warn
+
+      - name: nome_cidade
+        description: cidade do comprador
+        data_tests:
+          - not_null:
+              config:
+                severity: warn
+
+      - name: sigla_estado
+        description: a sigla do estado
+
+      - name: nome_estado
+        description: o estado do comprador
+        data_tests:
+          - not_null:
+              config:
+                severity: warn
+
+      - name: nome_pais
+        description: o pais do comprador
+        data_tests:
+          - not_null:
+              config:
+                severity: warn

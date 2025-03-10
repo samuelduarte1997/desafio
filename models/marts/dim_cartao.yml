@@ -1,0 +1,16 @@
+models:
+  - name: dim_cartao
+    description: Dimensão com os nomes dos tipos de cartao
+    columns:     
+      - name: pk_cartao
+        description: chave primária com o id do cartao
+        data_tests:
+          - unique
+          - not_null
+
+      - name: tipo_cartao
+        description: o tipo do cartao
+        data_tests:
+          - not_null:
+              config:
+                severity: warn
