@@ -1,0 +1,16 @@
+with
+    fonte_motivo as(
+        select *
+        from {{ source('erp','salesorderheadersalesreason') }}
+    )
+
+    , renomeado as (
+        select
+            cast(SALESORDERID as int) as pk_pedido
+            , cast(SALESREASONID as int) as fk_motivo
+            -- MODIFIEDDATE
+        from fonte_motivo
+    )
+
+select * 
+from renomeado
