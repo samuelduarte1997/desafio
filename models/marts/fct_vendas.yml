@@ -39,21 +39,18 @@ models:
               config:
                 severity: warn
 
-      - name: fk_motivo_1
-        description: id do primeiro motivo da compra
-
-      - name: fk_motivo_2
-        description: id do segundo motivo da compra (caso tenha tido mais do que 1)
-
-      - name: fk_motivo_3
-        description: id do terceiro motivo da compra (caso tenha tido mais do que 2)
-
       - name: fk_data_do_pedido
         description: id da data do pedido no formato 'YYYY-MM-DD'
         data_tests:
           - not_null:
               config:
                 severity: warn
+
+      - name: nome_motivo
+        description: nome do motivo de venda
+
+      - name: tipo_motivo
+        description: tipo do motivo de venda
 
       - name: status_pedido
         description: id do status do pedido
