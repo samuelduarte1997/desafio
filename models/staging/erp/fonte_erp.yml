@@ -67,15 +67,6 @@ sources:
             description: id dos pedidos
             tests:
             - not_null
-
-      - name: salesreason
-        description: tabela com os dados especificos dos motivos
-        columns:
-          - name: salesreasonid
-            description: id dos motivos
-            tests:
-            - unique
-            - not_null
       - name: address
         description: tabela com os dados dos enderecos
         columns:
