@@ -30,12 +30,5 @@ with
         group by pk_pedido 
     )
 
-    , coluna_mesclada as (
-        select
-            pk_pedido
-            , fk_motivo_1 ||','|| fk_motivo_2 ||','|| fk_motivo_3 as id_motivos
-        from criacao_colunas
-    )
 select * 
-from coluna_mesclada
-
+from criacao_colunas
